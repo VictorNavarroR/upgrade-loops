@@ -28,3 +28,9 @@ alumns.map( alumn => {
 });
 
 console.log(alumns);
+//Iteration#3
+const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
+
+for(place of placesToTravel) {
+    console.log(place);
+}
