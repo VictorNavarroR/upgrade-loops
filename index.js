@@ -10,7 +10,7 @@ products.forEach( item => {
 
 //Iteration#2
 const alumns = [
-    {name: 'Pepe Viruela', T1: false, T2: false, T3: true}, 
+        {name: 'Pepe Viruela', T1: false, T2: false, T3: true}, 
 		{name: 'Lucia Aranda', T1: true, T2: false, T3: true},
 		{name: 'Juan Miranda', T1: false, T2: true, T3: true},
 		{name: 'Alfredo Blanco', T1: false, T2: false, T3: false},
@@ -31,7 +31,7 @@ console.log(alumns);
 //Iteration#3
 const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 'Madagascar']
 
-for(place of placesToTravel) {
+for(let place of placesToTravel) {
     console.log(place);
 }
 
@@ -43,7 +43,7 @@ const alien = {
     weight: '259kg'
 }
 
-for(attr in alien) {
+for(let attr in alien) {
   console.log(`${attr}: ${alien[attr]}`)
 }
 
@@ -65,3 +65,21 @@ const placesToTravel = [
   }
   
   console.log(placesToTravel)
+
+  //Iteration#6
+  const toys = [
+    {id: 5, name: 'Buzz MyYear'}, 
+    {id: 11, name: 'Action Woman'}, 
+    {id: 23, name: 'Barbie Man'}, 
+    {id: 40, name: 'El gato con Guantes'},
+    {id: 40, name: 'El gato felix'}
+    ]
+    
+    for(let toy of toys ) {
+        let index = toys.indexOf(toy);
+        if(toy.name.includes('gato')) {
+          toys.splice(index, 2);
+        }
+    }
+    
+    console.log(toys);
