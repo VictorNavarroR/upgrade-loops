@@ -46,3 +46,22 @@ const alien = {
 for(attr in alien) {
   console.log(`${attr}: ${alien[attr]}`)
 }
+
+//Iteration#5
+const placesToTravel = [
+    {id: 5, name: 'Japan'}, 
+    {id: 11, name: 'Venecia'}, 
+    {id: 23, name: 'Murcia'}, 
+    {id: 40, name: 'Santander'}, 
+    {id: 44, name: 'Filipinas'}, 
+    {id: 59, name: 'Madagascar'}
+  ]
+  
+  for(let i = 0; i < placesToTravel.length; i++) {
+    let item = placesToTravel[i];
+     if(item.id === 40 || item.id === 11) {
+          placesToTravel.splice(i, 1);
+     }
+  }
+  
+  console.log(placesToTravel)
